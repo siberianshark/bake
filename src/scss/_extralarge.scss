@@ -1,0 +1,39 @@
+@media screen and (min-width: 1200px) {
+  .container, .navbar {
+    width: 1140px;
+  }
+
+  .about__banner-text {
+    font-size: 4rem;
+  }
+
+  .offer {
+    &__card-group {
+      gap: 3rem;
+    }
+
+    &__card {
+      padding: 3em;
+
+      &-option {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .testimonials {
+    &__slider-card {
+      height: 440px;
+    }
+  }
+
+  .parks {
+    &__card-image {
+      height: 350px;
+    }
+  }
+
+  .contact__form-error {
+    font-size: 1.6rem;
+  }
+}

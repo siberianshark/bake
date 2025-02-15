@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Выгодные предложения</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Самая лучшая выпечка">
+  <meta name="author" content="Пекарня Марты">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/bake.svg"> <!-- SVG favicon -->
+  <link rel="icon" type="image/png" href="./assets/icons/bake.png"> <!-- Fallback PNG favicon for older browsers which do not support SVG -->
+  <link rel="stylesheet" type="text/css" href="./css/style.min.css">
+</head>
+<body data-current-page="offer">
+  <!-- Fluid container -->
+  <div class="container-fluid">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <!-- Logo -->
+      <a href="./index.html" class="navbar__logo" aria-label="Пекарня">
+        <picture>
+          <!-- Fallback PNG logo for older browsers -->
+          <source type="image/png" srcset="./assets/icons/bake.png">
+          <!-- SVG logo -->
+          <img src="./assets/icons/bake.svg" class="navbar__logo-icon" alt="Самая лучшая выпечка" aria-hidden="true"> 
+        </picture>
+        Пекарня Марты
+      </a>
+      <!-- Logo -->
+      <!-- Hamburger icon -->
+      <button type="button" class="navbar__burger-icon" aria-label="Марта и ее выпечка" aria-expanded="false" aria-controls="navbarLinks">
+        <span class="navbar__burger-icon-line"></span>
+      </button> 
+      <!-- Hamburger icon -->
+      <!-- Links -->
+      <div class="navbar__links" id="navbarLinks">
+        <ul class="navbar__list">
+          <li class="navbar__item"><a href="./index.html" class="navbar__link" aria-current="page">Home</a></li>
+          <li class="navbar__item"><a href="#about" class="navbar__link">About</a></li>
+          <li class="navbar__item"><a href="./offer.html" class="navbar__link">Oferta</a></li>
+          <li class="navbar__item"><a href="./contact.html" class="navbar__link">Contacts</a></li>
+        </ul>
+      </div> 
+      <!-- Links -->
+    </nav> 
+    <!-- Navbar -->
+  </div> 
+  <!-- Fluid container -->
+  <!-- Overlay -->
+  <div class="navbar__overlay"></div>
+  <!-- Overlay -->
+  <!-- Hero -->
+  <header id="hero" class="hero page-section page-section--scrollspy page-section--active">
+    <!-- Hero image -->
+    <picture>
+      <!-- Obrazek dla urządzeń o szerokości ekranu co najmniej 1200px -->
+      <source srcset="./images/hero_image_desktop_hq.min.jpg" media="(min-width: 1200px)">
+      <!-- Obrazek dla urządzeń o szerokości ekranu co najmniej 768px -->
+      <source srcset="./images/hero_image_desktop.min.jpg" media="(min-width: 768px)">
+      <!-- Obrazek domyślny, dla urządzeń o węższych ekranach -->
+      <img class="hero__image" src="./images/hero_image_mobile.min.jpg" alt="Пекарня"> 
+    </picture> 
+    <!-- Hero image -->
+    <!-- Container -->
+    <div class="container">
+      <!-- Hero text -->
+      <div class="hero__text">
+        <p class="hero__title">Пекарня </p>
+        <h1 class="hero__description">Свежие круасаны и не только!</h1>
+      </div> 
+      <!-- Hero text -->
+    </div> 
+    <!-- Container -->
+    <!-- Overlay -->
+    <div class="section__overlay"></div> 
+    <!-- Overlay -->
+  </header>
+  <!-- Hero -->
+  <!-- Main content -->
+  <main>
+    
+    <section class="section services">
+      <!-- Container -->
+      <div class="container">
+        <!-- Section title -->
+        <h2 class="section__title">Наша сеть пекарнь и кондитерских</h2>
+        <!-- Section title -->
+        <hr class="section__title-divider"> 
+        <!-- Section subtitle -->
+        <p class="section__subtitle">Стараемся для вас с 23090 года и хотим, чтобы в каждом доме была наша продукция!</p>
+        <!-- Section subtitle -->
+        <!-- Services box -->
+        <div class="services__cards">
+          <!-- Service -->
+          <div class="services__card">
+            <!-- Card header -->
+            <div class="services__card-header">
+              <picture>
+                <!-- Fallback PNG icon for older browsers -->
+                <source type="image/png" srcset="./assets/icons/2.png"> 
+                <!-- SVG icon -->
+                <img class="services__card-icon" src="./assets/icons/2.svg" alt="" aria-hidden="true">
+              </picture>
+            </div> 
+            <!-- Card header -->
+            <!-- Card body -->
+            <div class="services__card-body">
+              <h4 class="services__card-title">Пекарни</h4>
+              <p class="services__card-description">Уже 8 пекарнь по всей России</p>
+            </div> 
+            <!-- Card body -->
+          </div>
+          <!-- Service -->
+          <!-- Service -->
+          <div class="services__card">
+            <!-- Card header -->
+            <div class="services__card-header">
+              <picture>
+                <!-- Fallback PNG icon for older browsers -->
+                <source type="image/png" srcset="./assets/icons/2.png">
+                <!-- SVG icon -->
+                <img class="services__card-icon" src="./assets/icons/2.svg" alt="" aria-hidden="true">
+              </picture>
+            </div> 
+            <!-- Card header -->
+            <!-- Card body -->
+            <div class="services__card-body">
+              <h4 class="services__card-title">Кондитерские</h4>
+              <p class="services__card-description">Целых 5 кондитерских по всей России</p>
+            </div> 
+            <!-- Card body -->
+          </div>
+          <!-- Service -->
+          <!-- Service -->
+          <div class="services__card">
+            <!-- Card header -->
+            <div class="services__card-header">
+              <picture>
+                <!-- Fallback PNG icon for older browsers -->
+                <source type="image/png" srcset="./assets/icons/2.png">
+                <!-- SVG icon -->
+                <img class="services__card-icon" src="./assets/icons/2.svg" alt="" aria-hidden="true">
+              </picture>
+            </div> 
+            <!-- Card header -->
+            <!-- Card body -->
+            <div class="services__card-body">
+              <h4 class="services__card-title">Пекарни-Кондитерские</h4>
+              <p class="services__card-description">Создаем нечто особенное. Уже 3 пекарни-кондитерские и все для вас</p>
+            </div> 
+            <!-- Card body -->
+          </div>
+          <!-- Service -->
+        </div> 
+        <!-- Services box -->
+      </div> 
+      <!-- Container -->
+    </section>
+    
+    <section class="section parks">
+      <!-- Container -->
+      <div class="container">
+        <!-- Section title -->
+        <h2 class="section__title">Сеть</h2> 
+        <!-- Section title -->
+        <hr class="section__title-divider"> 
+        <!-- Section subtitle -->
+        <p class="section__subtitle">открыв первую в 3098 году мы стараемся развиваться и дать попробовать каждому нашу выпечку и десерты</p> 
+        <!-- Section subtitle -->
+        <!-- Parks grid -->
+        <div class="bake__grid">
+          <!-- HTML template for `parks__card` -->
+          <template class="parks__template">
+            <!-- Card -->
+            <div class="bake__card">
+              <!-- Card image -->
+              <img class="bake__card-image" src="#" alt="">
+              <!-- Card image -->
+              <!-- Card body -->
+              <div class="bake__card-body">
+                <!-- Title -->
+                <h4 class="bake__card-title"></h4>
+                <!-- Title -->
+                <!-- Info -->
+                <div class="bake__card-info">
+                  <!-- Icon -->
+                  <div class="bake__card-info-icon" role="img" aria-label="Пекарни">
+                    <picture>
+                      <!-- Fallback PNG icon for older browsers -->
+                      <source type="image/png" srcset="./assets/icons/pin.png">
+                      <!-- SVG icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="hsl(144, 73%, 52%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                      </svg> 
+                    </picture>
+                  </div>
+                  <!-- Icon -->
+                  <p class="bake__card-info-city"></p>
+                </div> 
+                <!-- Info -->
+                <!-- Info -->
+                <div class="bake__card-info">
+                  <!-- Icon -->
+                  <div class="bake__card-info-icon" role="img" aria-label="Пекарня">
+                    <picture>
+                      <!-- Fallback PNG icon for older browsers -->
+                      <source type="image/png" srcset="./assets/icons/square.png">
+                      <!-- SVG icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="hsl(144, 73%, 52%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-square">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+                      </svg>
+                    </picture>
+                  </div> 
+                  <!-- Icon -->
+                  <p class="bake__card-info-area"></p>
+                </div> 
+                <!-- Info -->
+                <!-- Info -->
+                <div class="bake__card-info">
+                  <!-- Description -->
+                  <p class="bake__card-info-description"></p> 
+                  <!-- Description -->
+                </div> 
+                <!-- Info -->
+                <!-- Link -->
+                <div class="bake__card-link-box">
+                  <a href="" class="bake__card-link" target="_blank" rel="noopener">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    Википедия
+                  </a>
+                </div>
+                <!-- Link -->
+              </div> 
+              <!-- bake body -->  
+            </div> 
+            <!-- bake -->
+          </template>
+          <!-- HTML template for `bake__card` -->
+        </div> 
+        <!-- bake grid -->
+      </div> 
+      <!-- Container -->
+    </section>
+
+  </main> 
+  <!-- Main content -->
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Container -->
+    <div class="container">
+      <!-- Navigation -->
+      <nav class="footer__nav">
+        <!-- Logo -->
+        <div class="footer__nav-logo">
+          <a href="/" class="footer__nav-logo-link">
+            <picture>
+              <!-- Fallback PNG logo for older browsers -->
+              <source type="image/png" srcset="./assets/icons/bake.png">
+              <!-- SVG logo -->
+              <img src="./assets/icons/bake.svg" class="footer__nav-logo-icon" alt="Самая вкусная выпечка"> 
+            </picture>
+            Пекарня Марты
+          </a>
+        </div>
+        <!-- Logo -->
+        <!-- Menu -->
+        <div class="footer__nav-section">
+          <h4 class="footer__nav-section-title">О нас</h4>
+          <!-- Links -->
+          <ul class="footer__nav-section-list">
+            <!-- Link -->
+            <li class="footer__nav-section-item">
+              <a href="#" class="footer__nav-section-link">История</a>
+            </li>
+            <!-- Link -->
+            <!-- Link -->
+            <li class="footer__nav-section-item">
+              <a href="#" class="footer__nav-section-link">Выпечка</a>
+            </li>
+            <!-- Link -->
+            <!-- Link -->
+            <li class="footer__nav-section-item">
+              <a href="#" class="footer__nav-section-link">Доставка</a>
+            </li>
+            <!-- Link -->
+          </ul> 
+          <!-- Links -->
+        </div> 
+        <!-- Menu -->
+        <!-- Menu -->
+        <div class="footer__nav-section">
+          <h4 class="footer__nav-section-title">Торты</h4>
+          <!-- Links -->
+          <ul class="footer__nav-section-list">
+            <!-- Link -->
+            <li class="footer__nav-section-item">
+              <a href="#" class="footer__nav-section-link">Конфеты</a>
+            </li>
+            <!-- Link -->
+            <!-- Link -->
+            <li class="footer__nav-section-item">
+              <a href="#" class="footer__nav-section-link">Булочки</a>
+            </li>
+            <!-- Link -->
+            <!-- Link -->
+            <li class="footer__nav-section-item">
+              <a href="#" class="footer__nav-section-link">Круасаны</a>
+            </li>
+            <!-- Link -->
+          </ul> 
+          <!-- Links -->
+        </div> 
+        <!-- Menu -->
+        <!-- Menu -->
+        <div class="footer__nav-section">
+          <h4 class="footer__nav-section-title">Сладости для детей</h4>
+          <!-- Links -->
+          <ul class="footer__nav-section-list">
+            <!-- Link -->
+            <li class="footer__nav-section-item">
+              <a href="#" class="footer__nav-section-link">Шоколадные пасты</a>
+            </li>
+            <!-- Link -->
+            <!-- Link -->
+            <li class="footer__nav-section-item">
+              <a href="#" class="footer__nav-section-link">Орехи</a>
+            </li>
+            <!-- Link -->
+          </ul> 
+          <!-- Links -->
+        </div> 
+        <!-- Menu -->
+      </nav> 
+      <!-- Navigation -->
+    </div>   
+    <!-- Container -->
+    <!-- Copyright -->
+    <p class="footer__copyright"><sup>&copy;</sup><span class="footer__copyright-year"></span> Пекарня Марты</p>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <script src="./js/main.min.js"></script>
+</body>
+</html>

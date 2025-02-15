@@ -1,0 +1,93 @@
+@media screen and (min-width: 576px) {
+  .hero {
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__description {
+      font-size: 2.4rem;
+    }
+  }
+
+  .about {
+    &__stats {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__banner-text {
+      font-size: 2.4rem;
+    }
+  }
+
+  .offer {
+    &__card {
+      padding: 3em;
+    }
+  }
+
+  .testimonials {
+    &__slider {
+      &-button {
+        padding: .5em .6em .35em;
+
+        &--prev {
+          left: -35px;
+        }
+
+        &--next {
+          right: -35px;
+        }
+      }
+    }
+
+    &__companies {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__company {
+      flex-basis: 50%;
+
+      &-logo {
+        width: 50%;
+      }
+
+      &:first-child {
+        & > .testimonials__company-logo {
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  .services {
+    &__cards {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__card {
+      width: 300px;
+    }
+  }
+
+  .parks {
+    &__card-image {
+      height: 300px;
+    }
+
+    &__card-title {
+      line-height: normal;
+    }
+
+    &__card-info-description {
+      font-size: 1.6rem;
+    }
+
+    &__card-link {
+      padding: .75em 4.5em;
+    }
+  }
+}

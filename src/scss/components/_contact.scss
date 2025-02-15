@@ -1,0 +1,226 @@
+@use "../utils/colors" as colors;
+@use "../utils/mixins" as mixins;
+
+.contact {
+  &__details, &__form {
+    padding: 2em;
+    border: 2px solid colors.$darkgray;
+    text-align: center;
+  }
+
+  &__details {
+    &-box {
+      margin-bottom: 1em;
+    }
+
+    &-address, &-phone, &-email {
+      color: colors.$darkgray;
+      line-height: 1.4;
+    }
+
+    &-logo {
+      @include mixins.companyLogo;
+      justify-content: center;
+      padding-top: 1em;
+      border-top: 2px solid colors.$darkgray;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  &__title {
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin-bottom: .5em;
+    font-size: 1.8rem;
+  }
+
+  &__form {
+    position: relative;
+
+    &-title {
+      text-transform: uppercase;
+    }
+
+    // Grid (start)
+
+    &-grid {
+      display: grid;
+      gap: 1em;
+
+      &-item {
+        margin-bottom: 1em;
+
+        &:nth-last-of-type(2) {
+          & > .contact__form-info-box {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+
+        &:last-of-type {
+          margin-bottom: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 1em;
+        }
+      }
+    }
+
+    // Grid (end
+
+    &-label {
+      display: block;
+      margin-bottom: .5em;
+      font-size: 1.8rem;
+      font-family: var(--DeliciousHandrawn-Regular);
+    }
+
+    &-input {
+      @include mixins.formControlStyles;
+
+      &::-webkit-input-placeholder {
+        color: colors.$darkgray;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: colors.$darkgray;
+      }
+
+      &--select {
+        @include mixins.formControlStyles;
+        appearance: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+  
+        &:focus {
+          outline: none;
+          border: 2px solid colors.$darkgray;
+        }
+      }
+
+      &-arrow {
+        position: absolute;
+        width: 20px;
+        right: 0;
+        margin: 1em;
+        fill: colors.$darkgray;
+        opacity: .75;
+        pointer-events: none;
+
+        &--up {
+          top: 25px;
+        }
+
+        &--down {
+          top: 27px;
+        }
+      }
+
+      &--textarea {
+        min-height: 70px;
+        resize: vertical;
+      }
+
+      &--error {
+        border-color: colors.$red;
+      }
+    }
+
+    &-select-box {
+      position: relative;
+    }
+
+    &-error {
+      display: none;
+      color: colors.$red;
+      font-size: 1.6rem;
+      text-align: left;
+
+      &--active {
+        display: block;
+      }
+    }
+
+    &-counter {
+      font-size: 1.4rem;
+      color: colors.$darkgray;
+    }
+
+    &-button {
+      @include mixins.buttonAndLinkStyles();
+      width: 220px;
+      font-size: 1.6rem;
+      cursor: pointer;
+
+      & > span {
+        @include mixins.buttonAndLinkHover();
+
+        &:first-child {
+          top: -50%;
+          left: -100%;
+        }
+
+        &:last-child {
+          bottom: -50%;
+          right: -100%;
+        }
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &--submit {
+        background-color: colors.$mint;
+        color: colors.$black;
+        border-color: colors.$darkmint;
+
+        & > span {
+          @include mixins.buttonAndLinkHover(colors.$darkmint);
+        }
+      }
+
+      &--reset:focus {
+        background-color: colors.$lightgray;
+      }
+
+      &--submit:focus {
+        background-color: colors.$darkmint;
+        border-color: colors.$black;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          & > span:first-child {
+            left: 0;
+          }
+
+          & > span:last-child {
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.map {
+  margin-bottom: 3em;
+
+  & .map__box {
+    width: 100%;
+    height: 600px;
+    border: 2px solid colors.$darkgray;
+  }
+}
